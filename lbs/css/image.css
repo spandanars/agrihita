@@ -1,0 +1,18 @@
+body{
+    background:url("img/");
+    margin:0;
+    padding:0;
+
+}
+.form input{
+    width=50%;
+    margin=200px;
+    position:absolute;
+    border-radius:1px solid black;
+}
+input{
+    width:70%;
+    margin:10px;
+    height:20px;
+    border-radius: 20px;
+}

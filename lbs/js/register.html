@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <center>
+    <div class="form input">
+        <form name="frm">
+        <input type="text" name="uname" id="uname" placeholder="enter your name"><br>
+        <span ng-show="frm.name.$error.required">*</span>
+        <input type="email" name="mail" id="mail" placeholder="enter your email"><br>
+        <span ng-show="frm.name.$error.required">*</span>
+        <span style="color:chartreuse" ng-show="frm.mail.$error.">not a mail</span>
+        <input type="password" name="pass" id="pass" placeholder="enter your password"><br>
+        
+        <input type="password" name="cpass" id="cpass" placeholder="enter your password"><br>
+        <button onclick="submit()">submit</button>
+        
+    </div>
+        </form>
+    <script>
+        function submit(){
+            var wd = document.getElementById("pass").value;
+            var wd1 = document.getElementById("cpass").value;
+            if(pass != cpass){
+                swal("oops", "You have entered wrong password", "warning", {
+                 button: "OK",
+                        });
+            }
+            
+        }
+
+
+    </script>
+    </center>
+
+    
+</body>
+</html>
